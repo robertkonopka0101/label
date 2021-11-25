@@ -1,0 +1,17 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Robert\Labelproduct\Api\Data\LabelInterface" type="Robert\Labelproduct\Model\Label" />
+	  <preference for="Robert\Labelproduct\Api\LabelRepositoryInterface" type="Robert\Labelproduct\Model\LabelRepository" />
+    <virtualType name="Robert\Labelproduct\Model\ResourceModel\Label\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">newlabels</argument>
+            <argument name="resourceModel" xsi:type="string">Robert\Labelproduct\Model\ResourceModel\Label</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="robert_labelproduct_label_listing_data_source" xsi:type="string">Robert\Labelproduct\Model\ResourceModel\Label\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

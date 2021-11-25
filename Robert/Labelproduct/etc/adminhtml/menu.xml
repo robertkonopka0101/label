@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Robert_Labelproduct::robertlabels" title="Robert Labels" module="Robert_Labelproduct" sortOrder="51" resource="Robert_Labelproduct::robertlabels"/>
+        <add id="Robert_Labelproduct::addlabels" title="Add Labels" module="Robert_Labelproduct" sortOrder="10" action="robert_labelproduct/label/index" resource="Robert_Labelproduct::addlabels" parent="Robert_Labelproduct::robertlabels"/>
+     </menu>
+</config>

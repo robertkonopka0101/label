@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      Robert Konopka <robcikwe@o2.pl>
+ * @category    Robert/Labelproduct
+ * @package     Robert
+ * @date        2021
+ * @copyright   Copyright (C) 2021 Robert Konopka
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="robert_labelproduct_label_edit"/>
+    <body/>
+</page>
